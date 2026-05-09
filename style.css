@@ -303,7 +303,7 @@ footer p{color:var(--muted);font-size:13px;line-height:1.9}
   .hero-photo-wrap{
     position:relative;
     width:100%;
-    height:60svh;
+    height:58svh;
     justify-content:stretch;
     overflow:hidden;
   }
@@ -316,66 +316,70 @@ footer p{color:var(--muted);font-size:13px;line-height:1.9}
     border-radius:0;
     border:none;
     box-shadow:none;
-    filter:contrast(1.08) brightness(1.02);
+    filter:contrast(1.06) brightness(1.04);
   }
-  /* Gradient over photo bottom */
+  /* Gradient blends photo into dark text area */
   .hero-photo-wrap::after{
     content:'';
     position:absolute;
     bottom:0;left:0;right:0;
-    height:60%;
-    background:linear-gradient(to bottom,transparent,rgba(10,12,8,.98));
+    height:55%;
+    background:linear-gradient(to bottom,transparent 0%,rgba(10,12,8,.7) 60%,rgba(10,12,8,1) 100%);
     pointer-events:none;
   }
   .photo-rank{
-    bottom:12px;
+    bottom:16px;
     font-size:9px;
-    letter-spacing:2px;
-    padding:4px 14px;
+    letter-spacing:2.5px;
+    padding:5px 16px;
   }
   /* Text block below photo */
   .hero > .hero-content > div:last-child{
-    padding:20px 20px 32px;
+    padding:16px 22px 36px;
     text-align:left;
   }
   .hero-badge{
     font-size:9px;
     padding:4px 12px;
-    margin-bottom:10px;
+    margin-bottom:8px;
     letter-spacing:2px;
   }
   .hero-rank-txt{
-    font-size:10px;
+    font-size:9px;
     letter-spacing:1.5px;
-    margin-bottom:8px;
+    margin-bottom:6px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
   }
   .hero h1{
-    font-size:38px;
+    font-size:36px;
     line-height:1.05;
-    margin-bottom:4px;
+    margin-bottom:2px;
   }
-  .hero-divider{margin:10px 0;width:60px}
+  .hero-divider{margin:10px 0;width:50px}
   .hero-pos{
-    font-size:13px;
-    margin-bottom:18px;
+    font-size:12px;
+    margin-bottom:16px;
     padding-left:12px;
     text-align:left;
+    line-height:1.6;
   }
   .stats{
     justify-content:flex-start;
-    gap:28px;
+    gap:32px;
     margin-bottom:0;
   }
-  .stat .n{font-size:34px}
-  .stat .l{font-size:9px}
+  .stat .n{font-size:32px}
+  .stat .l{font-size:9px;letter-spacing:1px}
   .hero-scroll{display:none}
-  .hero-corner{width:32px;height:32px}
+  .hero-corner{width:28px;height:28px;opacity:.6}
   .hero-overlay{
     background:
       linear-gradient(to bottom,
         rgba(10,12,8,0) 0%,
-        rgba(10,12,8,0) 50%,
-        rgba(10,12,8,.6) 70%,
+        rgba(10,12,8,0) 45%,
+        rgba(10,12,8,.5) 65%,
         rgba(10,12,8,1) 100%);
   }
   /* NAV */
