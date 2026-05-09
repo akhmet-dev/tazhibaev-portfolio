@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тажибаев Айтмұрат Икенович — Педагог портфолиосы</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" onclick="lbClose(event)">
+  <span class="lb-x" onclick="lbOff()">&times;</span>
+  <span class="lb-nav lb-p" onclick="lbNav(-1)">&#8249;</span>
+  <img id="lb-img" src="" alt="">
+  <span class="lb-nav lb-n" onclick="lbNav(1)">&#8250;</span>
+  <div class="lb-cnt" id="lb-cnt"></div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-scanlines"></div>
+  <div class="hero-vignette"></div>
+  <div class="hero-corner tl"></div>
+  <div class="hero-corner tr"></div>
+  <div class="hero-corner bl"></div>
+  <div class="hero-corner br"></div>
+
+  <div class="hero-content">
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-glow"></div>
+      <img class="hero-photo" src="images/curator.jpeg" alt="Тажибаев Айтмұрат Икенович">
+      <div class="photo-rank">Подполковник</div>
+    </div>
+    <div>
+      <div class="hero-badge">Педагог портфолиосы · 2026</div>
+      <div class="hero-rank-txt">ҚР Ұлттық ұланы ардагері · АӘД оқытушысы</div>
+      <h1>Тажибаев<br><span>Айтмұрат</span><br>Икенович</h1>
+      <div class="hero-divider"></div>
+      <p class="hero-pos">
+        <span id="typed" style="color:var(--gold);font-weight:600"></span><span class="typed-cursor">|</span><br>
+        Astana IT University колледжі · Астана қаласы
+      </p>
+      <div class="stats">
+        <div class="stat"><span class="n" data-n="25" data-suffix="+">0</span><span class="l">Жыл қызмет</span></div>
+        <div class="stat"><span class="n" data-n="4" data-suffix="+">0</span><span class="l">Жыл педагог</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">Жалғасы</div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">Тажибаев А.И.</div>
+    <div class="nav-links">
+      <a href="#about">Туралы</a>
+      <a href="#edu">Білімі</a>
+      <a href="#career">Еңбек жолы</a>
+      <a href="#awards">Марапаттар</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ABOUT -->
+<div class="section fade-in" id="about">
+  <h2 class="sh">Мен <span>туралы</span></h2>
+  <div class="sh-sub">Биография мен педагогикалық ұстаным</div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>Атырау мемлекеттік Халил Досмұқаметов атындағы университетінде бастапқы әскери дайындық және спорт пәнінің мұғалімі мамандығы бойынша білім алдым.</p>
+      <p>ҚР Ұлттық ұланына қатардағы сарбаз болып кіріп, жиырма бес жыл жеті ай қызмет атқардым — жауынгерден Подполковникке дейінгі барлық сатыдан өттім.</p>
+      <p>Қызметімді атқара жүріп, Петропавл қаласындағы Әскери институтта бірнеше рет оқу курстарынан өттім. 2021 жылдың аяғынан бастап ұстаздық қызметке кірістім.</p>
+      <p>Бүгінде Astana IT University колледжінде болашақ мамандардың бойына әскери тәртіп пен кәсіби дағдыларды сіңіру бағытында еңбек етіп келемін.</p>
+    </div>
+    <div class="skills">
+      <div class="skill-item">
+        <label><span>Саптық дайындық</span><span>98%</span></label>
+        <div class="skill-bar"><div class="skill-fill" style="width:0" data-w="98%"></div></div>
+      </div>
+      <div class="skill-item">
+        <label><span>Алғашқы медициналық көмек</span><span>95%</span></label>
+        <div class="skill-bar"><div class="skill-fill" style="width:0" data-w="95%"></div></div>
+      </div>
+      <div class="skill-item">
+        <label><span>Педагогикалық шеберлік</span><span>92%</span></label>
+        <div class="skill-bar"><div class="skill-fill" style="width:0" data-w="92%"></div></div>
+      </div>
+      <div class="skill-item">
+        <label><span>Спорттық дайындық</span><span>96%</span></label>
+        <div class="skill-bar"><div class="skill-fill" style="width:0" data-w="96%"></div></div>
+      </div>
+      <div class="skill-item">
+        <label><span>Инновациялық тәсілдер</span><span>88%</span></label>
+        <div class="skill-bar"><div class="skill-fill" style="width:0" data-w="88%"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EDUCATION -->
+<div class="bg-alt">
+<div class="section fade-in" id="edu">
+  <h2 class="sh">Білімі мен <span>біліктілігі</span></h2>
+  <div class="sh-sub">Академиялық және кәсіби дайындық</div>
+  <div class="cards">
+    <div class="card">
+      <div class="ct">Жоғары білімі</div>
+      <div class="cd"><strong>Атырау мемлекеттік Х.Досмұқаметов атындағы университеті</strong><br><br>Бастапқы әскери дайындық және спорт пәнінің мұғалімі</div>
+    </div>
+    <div class="card">
+      <div class="ct">Біліктілікті арттыру</div>
+      <div class="cd"><strong>Петропавл — Әскери институт</strong><br><br>Лауазымы мен білімін жетілдіру мақсатында бірнеше рет оқу курстарынан өтті</div>
+    </div>
+    <div class="card">
+      <div class="ct">Лауазымы</div>
+      <div class="cd"><strong>Подполковник</strong><br><br>ҚР Ұлттық ұланы · 25 жыл 7 ай мінсіз қызмет</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- CAREER -->
+<div class="section fade-in" id="career">
+  <h2 class="sh">Еңбек <span>жолы</span></h2>
+  <div class="sh-sub">Кәсіби өсу · хронология</div>
+  <div class="tl">
+    <div class="ti">
+      <div class="ti-dot"></div>
+      <div class="ti-year">1996 — 2021 · 25 жыл 7 ай</div>
+      <h3>ҚР Ұлттық ұланы</h3>
+      <p>Қатардағы сарбаздан Подполковникке дейін өсті. Петропавл Әскери институтында біліктілігін арттырды. Ерекше жауапкершілікпен қызмет атқарды.</p>
+    </div>
+    <div class="ti">
+      <div class="ti-dot"></div>
+      <div class="ti-year">2021 — қазіргі уақыт</div>
+      <h3>Oқытушы · Astana IT University</h3>
+      <p>АӘД пәнінің оқытушысы. Саптық, медициналық, спорттық дайындық жүргізеді. Заманауи инновациялық тәсілдерді белсенді қолданады.</p>
+    </div>
+    <div class="ti">
+      <div class="ti-dot"></div>
+      <div class="ti-year">2024 — «Қалқан» спартакиадасы</div>
+      <h3>Жүлделі орын</h3>
+      <p>Астана қаласы колледждері арасындағы қысқы спартакиадада студенттері жоғары нәтиже көрсетті.</p>
+    </div>
+    <div class="ti">
+      <div class="ti-dot"></div>
+      <div class="ti-year">2024 — Педагогикалық марапат</div>
+      <h3>«Үздік батальон командирі»</h3>
+      <p>Astana IT University колледжінің жоғары педагогикалық марапатын алды.</p>
+    </div>
+  </div>
+</div>
+
+<!-- AWARDS -->
+<div class="bg-alt">
+<div class="section" id="awards">
+  <h2 class="sh">Марапаттар мен <span>грамоталар</span></h2>
+  <div class="sh-sub">Суретке басыңыз — үлкейтіп көруге болады</div>
+  <div class="ag" id="ag"></div>
+</div>
+</div>
+
+
+
+<footer>
+  <div class="ft-name">Тажибаев Айтмұрат Икенович</div>
+  <p>АӘД пәнінің оқытушысы · Astana IT University · Астана</p>
+  <p>Подполковник · ҚР Ұлттық ұланы ардагері</p>
+  <div class="ft-badge">«Үздік педагог» байқауы · 2026</div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
